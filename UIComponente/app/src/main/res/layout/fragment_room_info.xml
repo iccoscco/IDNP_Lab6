@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomInfoFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/catedral"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/roomTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#333"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Lorem Ispum" />
+
+        <TextView
+            android:id="@+id/roomDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#666"
+            android:textSize="16sp"
+            tools:text="Lorem ipsum dolor sit amet consectetur adipiscing elit urna ultrices, congue iaculis maecenas netus aliquam ante laoreet est praesent, vestibulum vulputate turpis metus viverra nec curae sed. Potenti porta sociis nec ligula lacus class dis, pellentesque mi proin libero facilisi urna arcu nulla, curae netus volutpat fusce enim felis." />
+    </LinearLayout>
+
+</FrameLayout>

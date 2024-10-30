@@ -103,16 +103,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         private void mostrarInformacion(String ambiente) {
-            // Mostrar una ventana emergente
-            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-            builder.setTitle(ambiente);
-            builder.setMessage("Información adicional del " + ambiente);
-            builder.setPositiveButton("OK", (dialog, which) -> {
-                // Al cerrar el diálogo, actualizar el texto de información
-                infoText = "Información del " + ambiente;
-                invalidate(); // Redibujar el lienzo
-            });
-            builder.show();
+            RoomInfoFragment fragment = RoomInfoFragment.newInstance(ambiente);
+            fragment.show(getSupportFragmentManager(), "room_info");
         }
     }
 
